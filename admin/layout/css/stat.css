@@ -1,0 +1,15 @@
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    height:350px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}

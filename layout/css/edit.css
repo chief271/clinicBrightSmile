@@ -1,0 +1,12 @@
+.header{
+    background-color: lightblue;
+    padding: 10px;
+    border-bottom: 4px solid rgb(98, 197, 230);
+    text-align: center;
+}
+.editform{
+    margin-top:15px ;
+}
+form input:hover{
+    background-color: lightgray;
+}

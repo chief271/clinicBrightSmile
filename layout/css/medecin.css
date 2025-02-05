@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    width: 80%;
+    height: auto;
+    border-radius: 40px;
+    background: linear-gradient(180deg, #224A7A 0%, #B5D3F6 100%);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rectangle img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+.main, .doc {
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.main img, .doc img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 365px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #00AFA0;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #1D99DF;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #007bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .rectangle {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main, .doc {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .rectangle {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .main, .doc {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .content {
+        text-align: center;
+        padding: 10px;
+    }
+
+    h2, h4 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 80%;
+        padding: 10px;
+    }
+}

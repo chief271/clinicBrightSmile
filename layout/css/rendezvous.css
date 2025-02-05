@@ -1,0 +1,147 @@
+/* Styles généraux */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Formulaire */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* .appointment-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+} */
+
+.appointment-form h2 {
+    text-align: center;
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.select{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    background: lightgray;
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.05);
+    outline: none;
+    transition: .3s;}
+
+button {
+   
+    width: 50%;
+    height: 40px;
+    background-color:#76C2ED ;
+    border: none;
+    border-radius: 30px !important;
+    transition: .3s;
+}
+
+button:hover {
+    background: #76C2ED;
+    transform: scale(1.05,1);
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007acc;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Style the select dropdown */
+select {
+    appearance: none; /* Removes default styling */
+    -moz-appearance: none; /* Firefox support */
+    -webkit-appearance: none; /* Safari support */
+    background-color: #f4f4f4; /* Light gray background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Inner padding for content */
+    font-size: 16px; /* Font size */
+    color: #333; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width */
+}
+
+/* Add hover and focus effects */
+select:hover {
+    border-color: #888; /* Darker border on hover */
+}
+
+select:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow */
+}
+
+/* Add an arrow icon for the dropdown */
+select::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border: 6px solid transparent;
+    border-top-color: #333;
+}
+
+/* Style the select container if using custom arrows */
+.select-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.select-container select {
+    padding-right: 30px; /* Space for the arrow */
+}
+
